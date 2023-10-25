@@ -1,1 +1,1 @@
-export * from "./useProduct.tsx";
+export { useProduct } from "./useProduct";

@@ -1,9 +1,9 @@
 import styles from "../styles/styles.module.css";
 import { useProduct } from "../hooks";
 import { Provider } from "../context";
-import { ProductButtons, ProductTitle, ProductImage } from "./";
+import { ProductCardProps } from "../interfaces/interfaces";
 
-export const ProductCard = ({ product, children }: Props) => {
+export const ProductCard = ({ product, children }: ProductCardProps) => {
   const { counter, increaseBy } = useProduct();
   return (
     <Provider
@@ -17,7 +17,3 @@ export const ProductCard = ({ product, children }: Props) => {
     </Provider>
   );
 };
-
-ProductCard.Buttons = ProductButtons;
-ProductCard.Title = ProductTitle;
-ProductCard.Image = ProductImage;
