@@ -21,3 +21,9 @@
   color: whitesmoke;
   border-color: whitesmoke;
 }
+
+.shoping-card {
+  position: fixed;
+  right: 10px;
+  top: 0px;
+}
